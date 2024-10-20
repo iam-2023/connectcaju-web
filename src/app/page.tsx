@@ -35,8 +35,8 @@ export default function Home() {
               Este site ainda está em desenvolvimento.
             </p>
             <p className="text-center text-sm text-muted-foreground">
-              Para saber mais sobre o Instituto de Amêndoas de Moçambique, IP e o
-              projecto Connect Caju, clique no botão abaixo.
+              Para saber mais sobre o Instituto de Amêndoas de Moçambique, IP e
+              o projecto Connect Caju, clique no botão abaixo.
             </p>
             <Button variant="link" asChild>
               <Link href="https://iam.gov.mz" target="_blank">

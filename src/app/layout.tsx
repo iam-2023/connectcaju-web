@@ -33,7 +33,9 @@ export default function RootLayout({
       >
         <nav className="flex justify-between items-center p-4 bg-white shadow-sm">
           <div className="logo flex items-center gap-2">
-            <Image src="/logo.png" alt="Logo" width={50} height={50} />
+            <Link href="/" className="cursor-pointer">
+              <Image src="/logo.png" alt="Logo" width={50} height={50} />
+            </Link>
             <span className="text-xl font-bold text-primary">IAM, IP</span>
           </div>
           <div className="menu">
