@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Image from "next/image";
 import "./globals.css";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,9 +29,48 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-        {children}
+        <nav className="flex justify-between items-center p-4 bg-white shadow-sm">
+          <div className="logo flex items-center gap-2">
+            <Image src="/logo.png" alt="Logo" width={50} height={50} />
+            <span className="text-xl font-bold text-primary">IAM, IP</span>
+          </div>
+          <div className="menu">
+            <Button variant="link" asChild className="hover:text-primary/80">
+              <Link href="/" className="mr-4">
+                Página Inicial
+              </Link>
+            </Button>
+            <Button variant="link" asChild className="hover:text-primary/80">
+              <Link href="https://iam.gov.mz" target="_blank" className="mr-4">
+                Sobre Nós
+              </Link>
+            </Button>
+            <Button variant="link" asChild className="hover:text-primary/80">
+              <Link href="/contact" className="mr-4">
+                Contacto
+              </Link>
+            </Button>
+          </div>
+        </nav>
+        <main className="flex-grow">
+          {children}
+        </main>
+        <footer className="py-4 text-center bg-[#008000]">
+          <div className="container mx-auto space-x-4">
+            <Button variant="link" asChild className="text-white">
+              <Link href="/terms">Termos</Link>
+            </Button>
+            <Button variant="link" asChild className="text-white hover:text-white/80">
+              <Link href="/privacy">Privacidade</Link>
+            </Button>
+          </div>
+          <p className="text-white">
+            &copy; {new Date().getFullYear()} IAM, IP. Todos os direitos
+            reservados.
+          </p>
+        </footer>
       </body>
     </html>
   );
