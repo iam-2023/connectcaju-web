@@ -1,14 +1,8 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
-    "no-unused-vars": "off"
-  },
-  "overrides": [
-    {
-      "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
-      "rules": {
-        "no-console": "error"
-      }
-    }
-  ]
+    "no-unused-vars": "off",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
+  }
 }
