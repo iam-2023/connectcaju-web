@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 const TermsOfServicePage = () => {
   return (
     <div className="container mx-auto p-4 max-w-2xl border my-4">
       <h1 className="text-2xl font-bold mb-4 text-center">
-        Termos de Serviço do Connect Caju
+        Termos de Serviço do Connect Caju - IAM, IP
       </h1>
-      <p className="text-sm mb-4">Última atualização: 20/10/2024</p>
+      <p className="text-sm mb-4">Última actualização: 20/10/2024</p>
       <p className="mb-4 text-justify">
         Bem-vindo à <span className="font-bold">Plataforma Connect Caju</span>.
       </p>
@@ -25,7 +27,7 @@ const TermsOfServicePage = () => {
       <p className="mb-4 text-justify">
         O Connect Caju é um aplicativo móvel destinado aos trabalhadores do
         Instituto de Amêndoas de Moçambique que prestam assistência técnica aos
-        produtores de caju e participam nas atividades de monitoria de
+        produtores de caju e participam das actividades de monitoria de
         comercialização da castanha de caju em Moçambique.
       </p>
 
@@ -112,11 +114,19 @@ const TermsOfServicePage = () => {
         periodicamente.
       </p>
 
-      <h2 className="font-bold text-lg">13. Contato</h2>
-      <p className="mb-4 text-justify">
-        Se você tiver alguma dúvida sobre estes Termos, entre em contato conosco
-        através de [inserir método de contato].
-      </p>
+      <h2 className="font-bold text-lg">13. Contacto</h2>
+      <div className="mb-4 text-justify">
+        Se você tiver alguma dúvida sobre estes Termos, entre em contacto conosco
+        através de
+        :{" "}
+        <Link href="mailto:connectcaju@iam.gov.mz" className="underline">
+          connectcaju@iam.gov.mz
+        </Link>{" "}
+        &nbsp;ou pelo telefone:{" "}
+        <Link href="tel:+258840445375" className="underline">
+          +258 84 044 5375
+        </Link>.
+      </div>
     </div>
   );
 };
