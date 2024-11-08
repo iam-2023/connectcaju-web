@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Image from "next/image";
 import "./globals.css";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { useState } from "react";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
