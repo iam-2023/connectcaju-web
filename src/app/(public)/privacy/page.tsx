@@ -68,11 +68,11 @@ const PrivacyPage = () => {
         </div>
         <h2 className="font-bold text-lg">5. Limitação de acesso a dados</h2>
         <div>
-          Limitação de acesso a dados apenas para pessoas autorizadas
-          <br />
-          Solicitação de consentimento explícito para colecta e uso de dados
-          <br />
-          Acesso ao aplicativo protegido por login com e-mail e senha
+          <ol className="list-decimal ml-4">
+            <li className="mb-2 ml-2">Limitação de acesso a dados apenas para pessoas autorizadas</li>
+            <li className="mb-2 ml-2">Solicitação de consentimento explícito para colecta e uso de dados</li>
+            <li className="mb-2 ml-2">Acesso ao aplicativo protegido por login com e-mail e senha</li>
+          </ol>
         </div>
         <h2 className="font-bold text-lg">6. Uso de cookies</h2>
         <div>
@@ -97,7 +97,7 @@ const PrivacyPage = () => {
           revise esta página regularmente para se manter informado sobre
           quaisquer mudanças.
         </div>
-        <h2 className="font-bold text-lg">10. Contato</h2>
+        <h2 className="font-bold text-lg">10. Contacto</h2>
         <div>
           Para dúvidas ou sugestões sobre esta política, entre em contacto conosco
           pelo e-mail:{" "}

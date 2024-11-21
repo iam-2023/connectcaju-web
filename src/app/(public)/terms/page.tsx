@@ -50,16 +50,16 @@ const TermsOfServicePage = () => {
       <div className="mb-4 text-justify">
         Ao usar o Connect Caju, você concorda em:
         <ol className="list-decimal space-y-2 ml-4">
-          <li className="text-sm ml-2">
+          <li className="mb-2 ml-2">
             Fornecer informações verdadeiras e precisas
           </li>
-          <li className="text-sm ml-2">
+          <li className="mb-2 ml-2">
             Manter a confidencialidade de sua senha e conta
           </li>
-          <li className="text-sm ml-2">
+          <li className="mb-2 ml-2">
             Não usar o serviço para qualquer finalidade ilegal ou não autorizada
           </li>
-          <li className="text-sm ml-2">
+          <li className="mb-2 ml-2">
             Não interferir ou interromper a integridade ou o desempenho do
             aplicativo
           </li>
